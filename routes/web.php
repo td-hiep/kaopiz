@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hello', function(){
+	$user = [
+		'name' => 'abc',
+		"age" => 23
+	];
+	return view('hello',['test'=> $user]);
+});
+
